@@ -1,0 +1,261 @@
+<% include sidebar.ejs %>
+<div class="dt-content">
+
+    <!-- Page Header -->
+    <!-- <div class="dt-page__header">
+            <h1 class="dt-page__title">Basic Form</h1>
+          </div> -->
+    <!-- /page header -->
+
+
+
+    <!-- Grid -->
+    <div class="row">
+        <!-- Grid Item -->
+        <div class="col-12">
+
+            <!-- Card -->
+            <div class="dt-card">
+
+                <!-- Card Header -->
+                <div class="dt-card__header">
+
+                    <!-- Card Heading -->
+                    <div class="dt-card__heading">
+                        <h3 class="dt-card__title">Add Tool to Inventory</h3>
+        
+                    </div>
+                    <!-- /card heading -->
+                    <a type="button" href="/add/tools" role="button" class="btn btn-dark mr-2 mb-2">Add Tool Type</a>
+                    <a type="button" href="/add/tool/maintenance" role="button" class="btn btn-dark mr-2 mb-2">Add Maintenance Type</a>
+                    <a type="button" href="/add/tool/inspectiontype" role="button" class="btn btn-dark mr-2 mb-2">Add Inspection Type</a>
+                    <a type="button" href="/add/tool/tags" role="button" class="btn btn-dark mr-2 mb-2">Add Tool Tags</a>
+                </div>
+                <!-- /card header -->
+
+                <!-- Card Body -->
+                <div class="dt-card__body">
+
+                    <!-- Form -->
+                    <form>
+
+                            <div class="form-row input-group">
+                                    <label class="col-md-2 col-sm-3 col-form-label text-sm-right"
+                                        for="simple-select">Company Name</label>
+                                    <div class="col-md-10 col-sm-9">
+                                        <select class="custom-select" id="inputGroupSelect04">
+                                            <option selected>Choose Company Name</option>
+                                            <option value="1">ABC LTD.</option>
+                                            <option value="2">BCD LTD.</option>
+                                            <option value="3">DEF LTD.</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <br/>
+
+                        <!-- Form Row -->
+                        <div class="form-row input-group">
+                            <label class="col-md-2 col-sm-3 col-form-label text-sm-right"
+                                for="simple-select">Author</label>
+                            <div class="col-md-10 col-sm-9">
+                                <select class="custom-select" id="inputGroupSelect04">
+                                    <option selected>Choose Author</option>
+                                    <option value="1">Kim Peterson</option>
+                                    <option value="2">Jane Connard</option>
+                                    <option value="3">Jim Jackson</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- /form row -->
+                        <br />
+                        <!-- Form Row -->
+                        <div class="form-row input-group">
+                            <label class="col-md-2 col-sm-3 col-form-label text-sm-right" for="simple-select">Tool
+                                Type</label>
+                            <div class="col-md-10 col-sm-9">
+                                <select class="custom-select" id="inputGroupSelect04">
+                                    <option selected>Choose Tool Type</option>
+                                    <option value="1">Car</option>
+                                    <option value="2">Safety</option>
+                                    <option value="3">Others</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <br />
+
+                        <div class="form-row input-group">
+                            <label class="col-md-2 col-sm-3 col-form-label text-sm-right"
+                                for="simple-select">Supplier</label>
+                            <div class="col-md-10 col-sm-9">
+                                <select class="custom-select" id="inputGroupSelect04">
+                                    <option selected>Choose Supplier</option>
+                                    <option value="1">Nomag</option>
+                                    <option value="2">CAT Lift Trucks</option>
+                                    <option value="3">Bosch</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <br />
+
+                        <div class="form-row input-group">
+                            <label class="col-md-2 col-sm-3 col-form-label text-sm-right" for="normal-input-1">Tool
+                                Name</label>
+
+                            <div class="col-md-10 col-sm-9">
+                                <input type="text" class="form-control" name="tool_name" id="normal-input-1"
+                                    placeholder="Enter tool name">
+                            </div>
+                        </div>
+
+                        <br />
+
+                        <div class="form-row input-group">
+                            <label class="col-md-2 col-sm-3 col-form-label text-sm-right" for="normal-input-1">Tool
+                                Quantity</label>
+
+                            <div class="col-md-10 col-sm-9">
+                                <input type="number" class="form-control" name="tool_quantity" id="normal-input-1"
+                                    placeholder="Enter tool quantity">
+                            </div>
+                        </div>
+
+                        <br />
+
+                        <div class="form-row input-group">
+                            <label class="col-md-2 col-sm-3 col-form-label text-sm-right" for="normal-input-1">Brand
+                                Name</label>
+
+                            <div class="col-md-10 col-sm-9">
+                                <input type="text" class="form-control" name="brand_name" id="normal-input-1"
+                                    placeholder="Enter brand name">
+                            </div>
+                        </div>
+                        <br />
+                        <div class="form-row input-group">
+                            <label class="col-md-2 col-sm-3 col-form-label text-sm-right" for="normal-input-1">Type
+                                Number</label>
+
+                            <div class="col-md-10 col-sm-9">
+                                <input type="text" class="form-control" name="typeno." id="normal-input-1"
+                                    placeholder="Enter tool type number">
+                            </div>
+                        </div>
+                        <br />
+                        <div class="form-row input-group">
+                            <label class="col-md-2 col-sm-3 col-form-label text-sm-right"
+                                for="normal-input-1">Inspection Date</label>
+                            <div class="col-md-10 col-sm-9">
+                                <div class="input-group date" id="date-time-picker-1" data-target-input="nearest">
+                                    <input type="text" class="form-control datetimepicker-input"
+                                        data-target="#date-time-picker-1" />
+                                    <div class="input-group-append" data-target="#date-time-picker-1"
+                                        data-toggle="datetimepicker">
+                                        <div class="input-group-text"><i class="icon icon-calendar"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <br />
+
+                        <div class="form-row input-group">
+                            <label class="col-md-2 col-sm-3 col-form-label text-sm-right"
+                                for="normal-input-1">Maintenance Date</label>
+
+                            <div class="col-md-10 col-sm-9">
+                                <div class="input-group date" id="date-time-picker-2" data-target-input="nearest">
+                                    <input type="text" class="form-control datetimepicker-input"
+                                        data-target="#date-time-picker-2" />
+                                    <div class="input-group-append" data-target="#date-time-picker-2"
+                                        data-toggle="datetimepicker">
+                                        <div class="input-group-text"><i class="icon icon-calendar"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <br />
+
+                        <div class="form-row input-group">
+                            <label class="col-md-2 col-sm-3 col-form-label text-sm-right" for="normal-input-1">Serial
+                                Number</label>
+
+                            <div class="col-md-10 col-sm-9">
+                                <input type="text" class="form-control" name="tool_serialno" id="normal-input-1"
+                                    placeholder="Enter tool serial number">
+                            </div>
+                        </div>
+
+                        <br />
+                        <div class="form-row input-group">
+                            <label class="col-md-2 col-sm-3 col-form-label text-sm-right"
+                                for="normal-input-1">Location</label>
+
+                            <div class="col-md-10 col-sm-9">
+                                <input type="text" class="form-control" name="location" id="normal-input-1"
+                                    placeholder="Enter tool location">
+                            </div>
+                        </div>
+
+                        <br />
+                        <div class="form-row input-group">
+                            <label class="col-md-2 col-sm-3 col-form-label text-sm-right"
+                                for="normal-input-1">Certifying Certificate</label>
+
+                            <div class="col-md-10 col-sm-9">
+                                <input type="text" class="form-control" name="certifying_certificate"
+                                    id="normal-input-1" placeholder="Enter certificate name">
+                            </div>
+                        </div>
+
+                        <br />
+
+                        <div class="form-row input-group">
+                            <label class="col-md-2 col-sm-3 col-form-label text-sm-right" for="simple-select">Tool
+                                Status</label>
+                            <div class="col-md-10 col-sm-9">
+                                <select class="custom-select" id="inputGroupSelect04">
+                                    <option selected>Choose Tool Status..</option>
+                                    <option value="1">Paased</option>
+                                    <option value="2">Not Passed</option>
+
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <br />
+                        <div class="form-row input-group">
+                                <label class="col-md-2 col-sm-3 col-form-label text-sm-right" for="simple-select">Tool
+                                    Description</label>
+                        <div class="col-md-10 col-sm-9">
+                                <div id="summernote">
+                      
+                                  </div>
+
+                        </div>
+                        </div>
+
+                        
+
+                        <hr class="border-dashed my-8">
+                        <div class="form-row input-group">
+
+                            <div class="col-md-12 offset-md-2 offset-sm-3">
+                                <button class="btn btn-primary" style='float:left;' type="submit">Add this Tool</button>
+                            </div>
+                        </div>
+
+                        <br />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<% include footer.ejs %>

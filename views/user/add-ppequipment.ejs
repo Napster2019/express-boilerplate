@@ -1,0 +1,151 @@
+<% include sidebar.ejs %>
+
+<div class="dt-content">
+
+    <!-- Page Header -->
+    <!-- <div class="dt-page__header">
+      <h1 class="dt-page__title">Basic Form</h1>
+    </div> -->
+    <!-- /page header -->
+
+    <!-- <div class="dt-page__header">
+        <h1 class="dt-page__title">Issue's Tags</h1>
+    </div> -->
+
+    <!-- Grid -->
+    <div class="row">
+        <!-- Grid Item -->
+        <div class="col-12">
+
+            <!-- Card -->
+            <div class="dt-card">
+
+                <!-- Card Header -->
+                <div class="dt-card__header">
+
+                    <!-- Card Heading -->
+                    <div class="dt-card__heading">
+                        <h3 class="dt-card__title">Add Equipment</h3>
+                    </div>
+                    <!-- /card heading -->
+
+                </div>
+                <!-- /card header -->
+
+                <!-- Card Body -->
+                <div class="dt-card__body">
+
+                    <!-- Form -->
+                    <form>
+
+                        <div class="form-row input-group">
+                            <label class="col-md-2 col-sm-3 col-form-label text-sm-right" for="normal-input-1">Add Equipment
+                            </label>
+
+                            <div class="col-md-10 col-sm-9">
+                                <input type="text" class="form-control" name="Equipment" id="normal-input-1"
+                                    placeholder=" Add Equipment">
+                            </div>
+                        </div>
+                        <br />
+                        <div class="form-row input-group">
+                                <label class="col-md-2 col-sm-3 col-form-label text-sm-right" for="file-field">Attached Files</label>
+                  
+                                <div class="col-md-10 col-sm-9">
+                                  <div class="custom-file">
+                                    <input type="file" name="file" class="custom-file-input" id="file-field">
+                                    <label class="custom-file-label" for="file-field">Choose file...</label>
+                                  </div>
+                                </div>
+                              </div>
+                              <br/>
+                        <div class="form-row input-group">
+                            <label class="col-md-2 col-sm-3 col-form-label text-sm-right" for="text-area-1">Equipment
+                                description</label>
+
+                            <div class="col-md-10 col-sm-9">
+                                <div id="summernote">
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="form-row input-group">
+
+                                <div class="col-md-12 offset-md-2 offset-sm-3">
+                                  <button class="btn btn-primary" style='float:left;' type="submit">Add</button>
+                                </div>
+                              </div>
+                    </form>
+
+                    <!-- /form -->
+
+                </div>
+                <!-- /card body -->
+
+            </div>
+            <!-- /card -->
+
+        </div>
+        <!-- /grid item -->
+
+    </div>
+    <!-- /grid -->
+
+    <div class="row">
+        <!-- Grid Item -->
+        <div class="col-12">
+
+            <!-- Card -->
+            <div class="dt-card">
+
+                <!-- Card Header -->
+
+                <!-- /entry header -->
+
+                <!-- Card -->
+                <div class="card overflow-hidden">
+
+                    <!-- Card Header -->
+                    <div class="card-header bg-transparent">
+                        <h3 class="dt-card__title">All Job Description</h3>
+
+                    </div>
+                    <!-- /card header -->
+
+                    <!-- Card Body -->
+                    <div class="card-body pt-0">
+
+                        <!-- Tables -->
+                        <div class="table-responsive">
+                            <table class="table mb-0">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th class="text-uppercase" scope="col">Job Title Name</th>
+                                        <th class="text-uppercase" scope="col">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- /tables -->
+
+                    </div>
+                    <!-- /card body -->
+
+                </div>
+                <!-- /card -->
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /site content -->
+
+
+<% include footer.ejs %>

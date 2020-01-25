@@ -1,0 +1,360 @@
+<head>
+
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- <meta name="keywords" content="Responsive, HTML5, admin theme, business, professional, jQuery, web design, CSS3, sass"> -->
+    <!-- /meta tags -->
+    <title>Qfirst</title>
+  
+    <!-- Site favicon -->
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
+    <!-- /site favicon -->
+  
+    <!-- Font Icon Styles -->
+    <link rel="stylesheet" href="/assets/node_modules/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="/assets/vendors/gaxon-icon/style.css">
+    <!-- /font icon Styles -->
+  
+    <!-- Perfect Scrollbar stylesheet -->
+    <link rel="stylesheet" href="/assets/node_modules/perfect-scrollbar/css/perfect-scrollbar.css">
+    <link rel="stylesheet" href="/assets/node_modules/summernote/dist/summernote-bs4.css">
+  
+  
+    <script type="text/javascript" src="https://cdn.tiny.cloud/1/zhf2jqrxaqv0ddu52capasosra3scjcofnuoj2kirobtau61/tinymce/5/tinymce.min.js"></script>
+    <script type="text/javascript">
+      tinymce.init({
+        selector: '#tinymyTextarea',
+        skin: 'dark',
+        width: 600,
+        height: 300,
+        plugins: [
+          'advlist autolink link image lists charmap print preview hr anchor pagebreak spellchecker',
+          'searchreplace wordcount visualblocks visualchars code fullscreen insertdatetime media nonbreaking',
+          'save table directionality emoticons template paste'
+        ],
+        // content_css: 'css/content.css',
+        toolbar: 'insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image | print preview media fullpage | forecolor backcolor emoticons'
+      });
+      </script>
+  
+    <!-- /perfect scrollbar stylesheet -->
+  
+    <!-- Load Styles -->
+    <link rel="stylesheet" href="/assets/node_modules/tempusdominus-bootstrap-4/build/css/tempusdominus-bootstrap-4.min.css">
+    <!-- <link rel="stylesheet" href="/assets/node_modules/datatables.net-bs4/css/dataTables.bootstrap4.css"> -->
+  
+  
+    <link rel="stylesheet" href="/assets/css/semidark-style-1.min.css">
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/autofill/2.3.4/css/autoFill.dataTables.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.6.0/css/buttons.dataTables.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/colreorder/1.5.2/css/colReorder.dataTables.min.css"/>
+<!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.2/css/uikit.min.css"/> -->
+
+<!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/dataTables.uikit.min.css"/> -->
+
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/fixedcolumns/3.3.0/css/fixedColumns.dataTables.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/fixedheader/3.1.6/css/fixedHeader.dataTables.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/keytable/2.5.1/css/keyTable.dataTables.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/rowgroup/1.1.1/css/rowGroup.dataTables.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/rowreorder/1.2.6/css/rowReorder.dataTables.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/scroller/2.0.1/css/scroller.dataTables.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/select/1.3.1/css/select.dataTables.min.css"/>
+    <!-- /load styles -->
+  
+  </head>
+  <body class="dt-sidebar--fixed dt-header--fixed">
+  
+  <!-- Loader -->
+  <div class="dt-loader-container">
+    <div class="dt-loader">
+      <svg class="circular" viewBox="25 25 50 50">
+        <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"></circle>
+      </svg>
+    </div>
+  </div>
+  <!-- /loader -->
+  
+  <!-- Root -->
+  <div class="dt-root">
+  
+    <!-- Header -->
+    <header class="dt-header">
+  
+      <!-- Header container -->
+      <div class="dt-header__container">
+  
+        <!-- Brand -->
+        <div class="dt-brand">
+  
+          <!-- Brand tool -->
+          <div class="dt-brand__tool" data-toggle="main-sidebar">
+            <i class="icon icon-xl icon-menu-fold d-none d-lg-inline-block"></i>
+            <i class="icon icon-xl icon-menu d-lg-none"></i>
+          </div>
+          <!-- /brand tool -->
+  
+          <!-- Brand logo -->
+          <span class="dt-brand__logo">
+          <a class="dt-brand__logo-link" href="/">
+            <img class="dt-brand__logo-img d-none d-lg-inline-block" src="/img/logo.png" alt="Vamah">
+            <img class="dt-brand__logo-symbol d-lg-none" src="/img/logo.png" alt="Vamah">
+          </a>
+        </span>
+          <!-- /brand logo -->
+  
+        </div>
+        <!-- /brand -->
+  
+        <!-- Header toolbar-->
+        <div class="dt-header__toolbar">
+  
+          <!-- Search box -->
+          <form class="search-box d-none d-lg-block">
+            <input class="form-control border-0" placeholder="Search in app..." value="" type="search">
+            <span class="search-icon text-light-gray"><i class="icon icon-search icon-lg"></i></span>
+          </form>
+          <!-- /search box -->
+  
+          <!-- Header Menu Wrapper -->
+          <div class="dt-nav-wrapper">
+            <!-- Header Menu -->
+            <ul class="dt-nav d-lg-none" style="width: 40px; height: 60px;">
+              <li class="dt-nav__item dt-notification-search dropdown">
+  
+                <!-- Dropdown Link -->
+                <a href="#" class="dt-nav__link dropdown-toggle no-arrow" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false"> <i class="icon icon-search-new icon-fw icon-lg"></i> </a>
+                <!-- /dropdown link -->
+  
+                <!-- Dropdown Option -->
+                <div class="dropdown-menu">
+  
+                  <!-- Search Box -->
+                  <form class="search-box right-side-icon">
+                    <input class="form-control form-control-lg" type="search" placeholder="Search in app...">
+                    <button type="submit" class="search-icon"><i class="icon icon-search icon-lg"></i></button>
+                  </form>
+                  <!-- /search box -->
+  
+                </div>
+                <!-- /dropdown option -->
+  
+              </li>
+            </ul>
+            <!-- /header menu -->
+  
+            <!-- Header Menu -->
+            <ul class="dt-nav d-lg-none">
+              <li class="dt-nav__item dt-notification dropdown" style="height: 60px; width: 56px;">
+  
+                <!-- Dropdown Link -->
+                <a href="#" class="dt-nav__link dropdown-toggle no-arrow" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false"> <i class="icon icon-notification icon-fw dt-icon-alert"></i>
+                </a>
+                <!-- /dropdown link -->
+  
+                <!-- Dropdown Option -->
+                <div class="dropdown-menu dropdown-menu-right dropdown-menu-media">
+                  <!-- Dropdown Menu Header -->
+                  <div class="dropdown-menu-header">
+                    <h4 class="title">Notifications (9)</h4>
+  
+                    <div class="ml-auto action-area">
+                      <a href="javascript:void(0)">Mark All Read</a> <a class="ml-2" href="javascript:void(0)">
+                      <i class="icon icon-setting icon-lg text-light-gray"></i> </a>
+                    </div>
+                  </div>
+                  <!-- /dropdown menu header -->
+  
+                  <!-- Dropdown Menu Body -->
+                  <div class="dropdown-menu-body ps-custom-scrollbar">
+  
+                    <div class="h-auto">
+                      <!-- Media -->
+                      <a href="javascript:void(0)" class="media">
+  
+                        
+                        <img class="dt-avatar mr-3" src="https://via.placeholder.com/150x150" alt="User">
+                        
+  
+                        
+                        <span class="media-body">
+                      <span class="message">
+                        <span class="user-name">Stella Johnson</span> and <span class="user-name">Chris Harris</span>
+                        have birthdays today. Help them celebrate!
+                      </span>
+                      <span class="meta-date">8 hours ago</span>
+                    </span>
+                        <!-- /media body -->
+  
+                      </a>
+                      <!-- /media -->
+  
+                      <!-- Media -->
+                      <a href="javascript:void(0)" class="media">
+  
+                        
+                        <img class="dt-avatar mr-3" src="https://via.placeholder.com/150x150" alt="User">
+                        
+  
+                        
+                        <span class="media-body">
+                      <span class="message">
+                        <span class="user-name">Jonathan Madano</span> commented on your post.
+                      </span>
+                      <span class="meta-date">9 hours ago</span>
+                    </span>
+                        <!-- /media body -->
+  
+                      </a>
+                      <!-- /media -->
+  
+                      <!-- Media -->
+                      <a href="javascript:void(0)" class="media">
+  
+                        
+                        <img class="dt-avatar mr-3" src="https://via.placeholder.com/150x150" alt="User">
+                        
+  
+                        
+                        <span class="media-body">
+                      <span class="message">
+                        <span class="user-name">Chelsea Brown</span> sent a video recomendation.
+                      </span>
+                      <span class="meta-date">
+                        <i class="icon icon-menu-right text-primary icon-fw mr-1"></i>
+                        13 hours ago
+                      </span>
+                    </span>
+                        <!-- /media body -->
+  
+                      </a>
+                      <!-- /media -->
+  
+                      <!-- Media -->
+                      <a href="javascript:void(0)" class="media">
+  
+                        
+                        <img class="dt-avatar mr-3" src="https://via.placeholder.com/150x150" alt="User">
+                        
+  
+                        
+                        <span class="media-body">
+                      <span class="message">
+                        <span class="user-name">Alex Dolgove</span> and <span class="user-name">Chris Harris</span>
+                        like your post.
+                      </span>
+                      <span class="meta-date">
+                        <i class="icon icon-like text-light-blue icon-fw mr-1"></i>
+                        yesterday at 9:30
+                      </span>
+                    </span>
+                        <!-- /media body -->
+  
+                      </a>
+                      <!-- /media -->
+                    </div>
+  
+                  </div>
+                  <!-- /dropdown menu body -->
+  
+                  <!-- Dropdown Menu Footer -->
+                  <div class="dropdown-menu-footer">
+                    <a href="javascript:void(0)" class="card-link"> See All <i class="icon icon-arrow-right icon-fw"></i>
+                    </a>
+                  </div>
+                  <!-- /dropdown menu footer -->
+                </div>
+                <!-- /dropdown option -->
+  
+              </li>
+  
+            <!-- /header menu -->
+  
+            <!-- Header Menu -->
+            <div class="dropdown mb-6" id="user-menu-dropdown"style="text-align:center;padding:25px;">
+  
+              <!-- Dropdown Link -->
+              <a href="#" class="dropdown-toggle dt-avatar-wrapper text-body"
+                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                
+                <span class="dt-avatar-info" style="text-align:center;">
+              <span class="dt-avatar-name" ><%= user.name %></span>
+      
+              
+            </span> </a>
+              <!-- /dropdown link -->
+      
+              <!-- Dropdown Option -->
+              <div class="dropdown-menu dropdown-menu-right">
+                <div class="dt-avatar-wrapper flex-nowrap p-6 mt--5 bg-gradient-purple text-white rounded-top">
+                  <img class="dt-avatar" src="/img/user-male-icon.png" alt="Jazz">
+                  <span class="dt-avatar-info">
+                    <span class="dt-avatar-name"><%= user.name %></span>
+                    <span class="f-12"><%= user.permission %></span>
+                  </span>
+                </div>
+                <a class="dropdown-item" href="/user/information"> <i class="icon icon-user-o icon-fw mr-2 mr-sm-1"></i>Account
+                </a> <a class="dropdown-item" href="javascript:void(0)">
+                <i class="icon icon-setting icon-fw mr-2 mr-sm-1"></i>Setting </a>
+                <a class="dropdown-item" href="/"> <i class="icon icon-edit icon-fw mr-2 mr-sm-1"></i>Logout
+                </a>
+              </div>
+              <!-- /dropdown option -->
+      
+            </div>
+            <!-- /header menu -->
+  
+            <!-- Header Menu -->
+            <!-- <ul class="dt-nav d-lg-none">
+              <li class="dt-nav__item dropdown">
+  
+                
+                <a href="#" class="dt-nav__link dropdown-toggle no-arrow dt-avatar-wrapper"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img class="dt-avatar size-40" src="https://via.placeholder.com/150x150" alt="Domnic Harris">
+                </a>
+                
+                <div class="dropdown-menu dropdown-menu-right">
+                  <div class="dt-avatar-wrapper flex-nowrap p-6 mt--5 bg-gradient-purple text-white rounded-top">
+                    <img class="dt-avatar" src="https://via.placeholder.com/150x150" alt="Domnic Harris">
+                    <span class="dt-avatar-info">
+                    <span class="dt-avatar-name">Bob Hyden</span>
+                    <span class="f-12">Administrator</span>
+                  </span>
+                  </div>
+                  <a class="dropdown-item" href="javascript:void(0)"> <i class="icon icon-user-o icon-fw mr-2 mr-sm-1"></i>Account
+                  </a> <a class="dropdown-item" href="javascript:void(0)">
+                  <i class="icon icon-setting icon-fw mr-2 mr-sm-1"></i>Setting </a>
+                  <a class="dropdown-item" href="page-login.html"> <i class="icon icon-edit icon-fw mr-2 mr-sm-1"></i>Logout
+                  </a>
+                </div>
+                
+  
+              </li>
+            </ul> -->
+            <!-- /header menu -->
+  
+          </div>
+          <!-- Header Menu Wrapper -->
+  
+        </div>
+        <!-- /header toolbar -->
+  
+      </div>
+      <!-- /header container -->
+  
+    </header>
+    <!-- /header -->
+  
+    <!-- Site Main -->
+    <main class="dt-main">
+
+
+

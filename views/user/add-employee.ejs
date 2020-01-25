@@ -1,0 +1,148 @@
+<% include sidebar.ejs %>
+
+<div class="dt-content">
+
+  <!-- Page Header -->
+  <!-- <div class="dt-page__header">
+      <h1 class="dt-page__title">Basic Form</h1>
+    </div> -->
+  <!-- /page header -->
+
+
+
+  <!-- Grid -->
+  <div class="row">
+    <!-- Grid Item -->
+    <div class="col-12">
+
+      <!-- Card -->
+      <div class="dt-card">
+
+        <!-- Card Header -->
+        <div class="dt-card__header">
+
+          <!-- Card Heading -->
+          <div class="dt-card__heading">
+            <h3 class="dt-card__title">Add Employee Information</h3>
+          </div>
+          <!-- <a type="button" href="/add/issue/type" role="button" class="btn btn-dark mr-2 mb-2">Add Issue Type</a>
+          <a type="button" href="/add/issue/sources" role="button" class="btn btn-dark mr-2 mb-2">Add Issue Source</a>
+          <a type="button" href="/add/issue/titles" role="button" class="btn btn-dark mr-2 mb-2">Add Issue Titles</a>
+          <button type="button" href="javascript:void(0)" role="button" class="btn btn-dark mr-2 mb-2">Add ISO Standards</button>
+          <a type="button" href="/add/issue/suppliers" role="button" class="btn btn-dark mr-2 mb-2">Add Suppliers</a>
+          <a type="button" href="/add/issue/tags" role="button" class="btn btn-dark mr-2 mb-2">Add Issue Tags</a> -->
+          <!-- /card heading -->
+
+        </div>
+        <!-- /card header -->
+
+        <!-- Card Body -->
+        <div class="dt-card__body">
+
+          <!-- Form -->
+          <form>
+
+
+            <!-- Form Row -->
+            <div class="form-row input-group">
+                    <label class="col-md-2 col-sm-3 col-form-label text-sm-right" for="normal-input-1">Name</label>
+      
+                    <div class="col-md-10 col-sm-9">
+                      <input type="text" class="form-control" name="employeename" id="normal-input-1"
+                        placeholder="Employee Name">
+                    </div>
+                  </div>
+
+            <!-- /form row -->
+            <br />
+            <!-- Form Row -->
+            <div class="form-row input-group">
+                    <label class="col-md-2 col-sm-3 col-form-label text-sm-right" for="normal-input-1">Email</label>
+      
+                    <div class="col-md-10 col-sm-9">
+                      <input type="email" class="form-control" name="employeeemail" id="normal-input-1"
+                        placeholder="Employee Email">
+                    </div>
+                  </div>
+            <!-- /form row -->
+            <br />
+
+            <!-- Form Row -->
+            <div class="form-row input-group">
+                    <label class="col-md-2 col-sm-3 col-form-label text-sm-right" for="normal-input-1">Company Name</label>
+      
+                    <div class="col-md-10 col-sm-9">
+                      <input type="text" class="form-control" name="emporganization" id="normal-input-1"
+                        placeholder="Enter your Company Name" readonly>
+                    </div>
+                  </div>
+            <!-- /form row -->
+            <br />
+            <div class="form-row input-group">
+                <label class="col-md-2 col-sm-3 col-form-label text-sm-right" for="normal-input-1">Reporting To</label>
+  
+                <div class="col-md-10 col-sm-9">
+                  <input type="text" class="form-control" name="reportingperson" id="normal-input-1"
+                    placeholder="Enter reporting person" >
+                </div>
+              </div>
+              <br />
+              <div class="form-row input-group">
+                  <label class="col-md-2 col-sm-3 col-form-label text-sm-right" for="normal-input-1">Deputy</label>
+    
+                  <div class="col-md-10 col-sm-9">
+                    <input type="text" class="form-control" name="deputyperson" id="normal-input-1"
+                      placeholder="Enter Deputy" >
+                  </div>
+                </div>
+              </br>
+            <!-- Form Row -->
+            <div class="form-row input-group">
+                    <label class="col-md-2 col-sm-3 col-form-label text-sm-right" for="normal-input-1">Job Post Name</label>
+      
+                    <div class="col-md-10 col-sm-9">
+                      <input type="email" class="form-control" name="employeejobname" id="normal-input-1"
+                        placeholder="Employee Job Name">
+                    </div>
+                  </div>
+        
+            <br />
+            <!-- Form Row -->
+            <div class="form-row input-group">
+              <label class="col-md-2 col-sm-3 col-form-label text-sm-right" for="text-area-1">Job Discription</label>
+
+              <div class="col-md-10 col-sm-9">
+                  <div id="summernote">
+                      
+                    </div>
+              </div>
+            </div>
+            <!-- /form row -->
+            <br />
+            <div class="form-row input-group">
+
+              <div class="col-md-12 offset-md-2 offset-sm-3">
+                <button class="btn btn-primary" style='float:left;' type="submit">Submit this Employee</button>
+              </div>
+            </div>
+
+          </form>
+          <!-- /form -->
+
+        </div>
+        <!-- /card body -->
+
+      </div>
+      <!-- /card -->
+
+    </div>
+    <!-- /grid item -->
+
+  </div>
+  <!-- /grid -->
+
+</div>
+<!-- /site content -->
+
+
+<% include footer.ejs %>

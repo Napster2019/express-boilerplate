@@ -1,0 +1,503 @@
+<% include datatable-header.ejs %>
+
+<!-- Sidebar -->
+<aside id="main-sidebar" class="dt-sidebar">
+  <div class="dt-sidebar__container">
+
+    <!-- Sidebar Notification -->
+    <div class="dt-sidebar__notification  d-none d-lg-block">
+      <!-- Dropdown -->
+      <div class="dropdown mb-6" id="user-menu-dropdown">
+
+
+        <img class="dt-avatar" src="/img/user-male-icon.png" alt="<%= user.name %>">
+        <span class="dt-avatar-info">
+          <span class="dt-avatar-name" style="color:#fd7e14;font-size:17px"><%= user.name %></span>
+
+          <span class="f-15" style="color:#fff;"><%= user.permission %></span>
+        </span>
+        <!-- /dropdown link -->
+
+        <!-- Dropdown Option -->
+        <div class="dropdown-menu dropdown-menu-right">
+          <div class="dt-avatar-wrapper flex-nowrap p-6 mt--5 bg-gradient-purple text-white rounded-top">
+            <img class="dt-avatar" src="/img/user-male-icon.png" alt="Jazz">
+            <span class="dt-avatar-info">
+              <span class="dt-avatar-name"><%= user.name %></span>
+              <span class="f-12"><%= user.permission %></span>
+            </span>
+          </div>
+          <a class="dropdown-item" href="/user/information"> <i
+              class="icon icon-user-o icon-fw mr-2 mr-sm-1"></i>Account
+          </a> <a class="dropdown-item" href="javascript:void(0)">
+            <i class="icon icon-setting icon-fw mr-2 mr-sm-1"></i>Setting </a>
+          <a class="dropdown-item" href="/"> <i class="icon icon-edit icon-fw mr-2 mr-sm-1"></i>Logout
+          </a>
+        </div>
+        <!-- /dropdown option -->
+
+      </div>
+
+    </div>
+    <!-- /sidebar notification -->
+
+    <!-- Sidebar Navigation -->
+    <ul class="dt-side-nav">
+
+      <!-- Menu Header -->
+
+      <!-- /menu header -->
+      <li class="dt-side-nav__item dt-side-nav__header">
+
+      </li>
+      <!-- Menu Item -->
+      <li class="dt-side-nav__item">
+        <a href="/admin/dashboard" class="dt-side-nav__link dt-side-nav__arrow" title="Dashboard">
+          <i class="icon icon-dashboard icon-fw icon-xl"></i> <span class="dt-side-nav__text">Dashboard</span> </a>
+
+      </li>
+
+      <li class="dt-side-nav__item">
+        <a href="javascript:void(0)" class="dt-side-nav__link dt-side-nav__arrow" title="Forms">
+          <i class="icon icon-feedback icon-fw icon-xl"></i>
+          <span class="dt-side-nav__text"> Design Forms</span> </a>
+
+        <ul class="dt-side-nav__sub-menu">
+          <!-- /menu item -->
+
+          <!-- /menu header -->
+
+          <!-- Menu Item -->
+          <li class="dt-side-nav__item">
+            <a href="javascript:void(0)" class="dt-side-nav__link" title="Forms for Planning"> <i
+                class="icon icon-feedback icon-fw icon-xl"></i>
+              <span class="dt-side-nav__text">Forms for Planning</span> </a>
+          </li>
+          <li class="dt-side-nav__item">
+            <a href="javascript:void(0)" class="dt-side-nav__link" title="Forms for Capa"> <i
+                class="icon icon-feedback icon-fw icon-xl"></i>
+              <span class="dt-side-nav__text">Forms for Capa</span> </a>
+          </li>
+          <li class="dt-side-nav__item">
+            <a href="javascript:void(0)" class="dt-side-nav__link" title="Forms for Issues"> <i
+                class="icon icon-feedback icon-fw icon-xl"></i>
+              <span class="dt-side-nav__text">Forms for Issues</span> </a>
+          </li>
+          <li class="dt-side-nav__item">
+            <a href="javascript:void(0)" class="dt-side-nav__link" title="Forms for Internal Audit"> <i
+                class="icon icon-feedback icon-fw icon-xl"></i>
+              <span class="dt-side-nav__text">Forms for Internal Audit</span> </a>
+          </li>
+          <li class="dt-side-nav__item">
+            <a href="javascript:void(0)" class="dt-side-nav__link" title="Add Generals Forms"> <i
+                class="icon icon-feedback icon-fw icon-xl"></i>
+              <span class="dt-side-nav__text">Add Generals Forms</span> </a>
+          </li>
+        </ul>
+      </li>
+
+      <!-- /menu header -->
+
+      <li class="dt-side-nav__item">
+        <a href="javascript:void(0)" class="dt-side-nav__link dt-side-nav__arrow" title="Capa">
+          <i class="icon icon-tasks icon-fw icon-xl"></i>
+          <span class="dt-side-nav__text">Capa</span> </a>
+
+        <ul class="dt-side-nav__sub-menu">
+
+          <li class="dt-side-nav__item">
+            <a href="/create/task" class="dt-side-nav__link" title="New Capa"> <i
+                class="icon icon-add icon-fw icon-xl"></i>
+              <span class="dt-side-nav__text">New Capa</span> </a>
+          </li>
+          <li class="dt-side-nav__item">
+            <a href="javascript:void(0)" class="dt-side-nav__link" title="View Capa"> <i
+                class="icon icon-custom-view icon-fw icon-xl"></i>
+              <span class="dt-side-nav__text">View All Capa</span> </a>
+          </li>
+
+        </ul>
+      </li>
+
+      <li class="dt-side-nav__item">
+        <a href="javascript:void(0)" class="dt-side-nav__link dt-side-nav__arrow" title="Documentation">
+          <i class="icon icon-feedback icon-fw icon-xl"></i>
+          <span class="dt-side-nav__text">Documentation</span> </a>
+
+        <ul class="dt-side-nav__sub-menu">
+
+          <li class="dt-side-nav__item">
+            <a href="javascript:void(0)" class="dt-side-nav__link dt-side-nav__arrow" title="Procedure">
+              <i class="icon icon-select icon-fw icon-xl"></i>
+              <span class="dt-side-nav__text">Procedure</span> </a>
+
+            <ul class="dt-side-nav__sub-menu">
+
+              <li class="dt-side-nav__item">
+                <a href="/create/procedure" class="dt-side-nav__link" title="New Procedure's"> <i
+                    class="icon icon-add-circle icon-fw icon-xl"></i>
+                  <span class="dt-side-nav__text">New Procedure's</span> </a>
+              </li>
+              <li class="dt-side-nav__item">
+                <a href="/view/procedure" class="dt-side-nav__link" title="View Procedure's"> <i
+                    class="icon icon-tree icon-fw icon-xl"></i>
+                  <span class="dt-side-nav__text">View All Procedure's</span> </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="dt-side-nav__item">
+            <a href="javascript:void(0)" class="dt-side-nav__link dt-side-nav__arrow" title="Quality Manual">
+              <i class="icon icon-select icon-fw icon-xl"></i>
+              <span class="dt-side-nav__text">Quality Manual</span> </a>
+
+            <ul class="dt-side-nav__sub-menu">
+
+              <li class="dt-side-nav__item">
+                <a href="/create/qualitymanual" class="dt-side-nav__link" title="New Quality Manual"> <i
+                    class="icon icon-add-circle icon-fw icon-xl"></i>
+                  <span class="dt-side-nav__text">New Quality Manual</span> </a>
+              </li>
+              <li class="dt-side-nav__item">
+                <a href="/view/qualitymanual" class="dt-side-nav__link" title="View Quality Manual"> <i
+                    class="icon icon-tree icon-fw icon-xl"></i>
+                  <span class="dt-side-nav__text">View Quality Manual</span> </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="dt-side-nav__item">
+            <a href="javascript:void(0)" class="dt-side-nav__link dt-side-nav__arrow" title="Policy">
+              <i class="icon icon-select icon-fw icon-xl"></i>
+              <span class="dt-side-nav__text">Policy</span> </a>
+
+            <ul class="dt-side-nav__sub-menu">
+
+              <li class="dt-side-nav__item">
+                <a href="/create/policy" class="dt-side-nav__link" title="New Policy's"> <i
+                    class="icon icon-add-circle icon-fw icon-xl"></i>
+                  <span class="dt-side-nav__text">New Policy's</span> </a>
+              </li>
+              <li class="dt-side-nav__item">
+                <a href="/view/policy" class="dt-side-nav__link" title="View Policy's"> <i
+                    class="icon icon-tree icon-fw icon-xl"></i>
+                  <span class="dt-side-nav__text">View All Policy's</span> </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li class="dt-side-nav__item">
+        <a href="javascript:void(0)" class="dt-side-nav__link dt-side-nav__arrow" title="Risk Management">
+          <i class="icon icon-feedback icon-fw icon-xl"></i>
+          <span class="dt-side-nav__text">Risk Management</span> </a>
+
+        <ul class="dt-side-nav__sub-menu">
+
+          <li class="dt-side-nav__item">
+            <a href="javascript:void(0)" class="dt-side-nav__link dt-side-nav__arrow" title="Issue">
+              <i class="icon icon-map-drawing icon-fw icon-xl"></i>
+              <span class="dt-side-nav__text">Issue</span> </a>
+
+            <ul class="dt-side-nav__sub-menu">
+
+              <li class="dt-side-nav__item">
+                <a href="/create/issue" class="dt-side-nav__link" title="New Issue's"> <i
+                    class="icon icon-add-circle icon-fw icon-xl"></i>
+                  <span class="dt-side-nav__text">New Issue's</span> </a>
+              </li>
+              <li class="dt-side-nav__item">
+                <a href="/view/issue" class="dt-side-nav__link" title="View Issue's"> <i
+                    class="icon icon-all-contacts icon-fw icon-xl"></i>
+                  <span class="dt-side-nav__text">View All Issue's</span> </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="dt-side-nav__item">
+            <a href="javascript:void(0)" class="dt-side-nav__link dt-side-nav__arrow" title="Risk Matrix">
+              <i class="icon icon-map-drawing icon-fw icon-xl"></i>
+              <span class="dt-side-nav__text">Risk Matrix</span> </a>
+
+          </li>
+        </ul>
+      </li>
+
+      <li class="dt-side-nav__item">
+        <a href="javascript:void(0)" class="dt-side-nav__link dt-side-nav__arrow" title="Internal Audit">
+          <i class="icon icon-feedback icon-fw icon-xl"></i>
+          <span class="dt-side-nav__text">Internal Audit</span> </a>
+
+        <ul class="dt-side-nav__sub-menu">
+
+          <li class="dt-side-nav__item">
+            <a href="javascript:void(0)" class="dt-side-nav__link" title="View All Internal Audit">
+              <i class="icon icon-map-drawing icon-fw icon-xl"></i>
+              <span class="dt-side-nav__text">View All Internal Audit</span> </a>
+          </li>
+        </ul>
+      </li>
+
+      <!-- Menu Item -->
+      <li class="dt-side-nav__item">
+        <a href="javascript:void(0)" class="dt-side-nav__link dt-side-nav__arrow" title="Planning">
+          <i class="icon icon-calendar-new icon-fw icon-xl"></i>
+          <span class="dt-side-nav__text"> Planning Management</span> </a>
+
+        <!-- Sub-menu -->
+        <ul class="dt-side-nav__sub-menu">
+
+
+          <li class="dt-side-nav__item">
+            <a href="/create/planning" class="dt-side-nav__link" title="Add New Planning"> <i
+                class="icon icon-add-circle icon-fw icon-xl"></i>
+              <span class="dt-side-nav__text">Add New Planning</span> </a>
+          </li>
+          <li class="dt-side-nav__item">
+            <a href="javascript:void(0)" class="dt-side-nav__link" title="View Planning's"> <i
+                class="icon icon-collapse icon-fw icon-xl"></i>
+              <span class="dt-side-nav__text">View All Planning's</span> </a>
+          </li>
+
+          <li class="dt-side-nav__item">
+            <a href="javascript:void(0)" class="dt-side-nav__link" title="objectives"> <i
+                class="icon icon-collapse icon-fw icon-xl"></i>
+              <span class="dt-side-nav__text">Create Objectives</span> </a>
+          </li>
+
+        </ul>
+      </li>
+
+
+      <!-- /menu header -->
+
+      <!-- Menu Item -->
+      
+      
+
+          <li class="dt-side-nav__item">
+            <a href="javascript:void(0)" class="dt-side-nav__link dt-side-nav__arrow" title="Employee Management">
+              <i class="icon icon-select icon-fw icon-xl"></i>
+              <span class="dt-side-nav__text">Employee Management</span> </a>
+
+            <ul class="dt-side-nav__sub-menu">
+
+              <li class="dt-side-nav__item">
+                <a href="/add/employee" class="dt-side-nav__link" title="Add Employee's"> <i
+                    class="icon icon-add-circle icon-fw icon-xl"></i>
+                  <span class="dt-side-nav__text">Add Employee</span> </a>
+              </li>
+              <li class="dt-side-nav__item">
+                <a href="#" class="dt-side-nav__link" title="List of Employee's"> <i
+                    class="icon icon-tree icon-fw icon-xl"></i>
+                  <span class="dt-side-nav__text">List of Employee</span> </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="dt-side-nav__item">
+            <a href="javascript:void(0)" class="dt-side-nav__link dt-side-nav__arrow" title="Training Management">
+              <i class="icon icon-select icon-fw icon-xl"></i>
+              <span class="dt-side-nav__text">Training Management</span> </a>
+
+            <ul class="dt-side-nav__sub-menu">
+
+              <li class="dt-side-nav__item">
+                <a href="#" class="dt-side-nav__link" title="Induction Training"> <i
+                    class="icon icon-add-circle icon-fw icon-xl"></i>
+                  <span class="dt-side-nav__text">Induction Training</span> </a>
+              </li>
+              <li class="dt-side-nav__item">
+                <a href="#" class="dt-side-nav__link" title="Training Need Identification"> <i
+                    class="icon icon-tree icon-fw icon-xl"></i>
+                  <span class="dt-side-nav__text">Training Need Identification</span> </a>
+              </li>
+              <li class="dt-side-nav__item">
+                <a href="#" class="dt-side-nav__link" title="Training Plan"> <i
+                    class="icon icon-tree icon-fw icon-xl"></i>
+                  <span class="dt-side-nav__text">Training Plan</span> </a>
+              </li>
+              <li class="dt-side-nav__item">
+                <a href="#" class="dt-side-nav__link" title="Training Reports"> <i
+                    class="icon icon-tree icon-fw icon-xl"></i>
+                  <span class="dt-side-nav__text">Training Reports</span> </a>
+              </li>
+              <li class="dt-side-nav__item">
+                <a href="#" class="dt-side-nav__link" title="Staff Evaluation"> <i
+                    class="icon icon-tree icon-fw icon-xl"></i>
+                  <span class="dt-side-nav__text">Staff Evaluation</span> </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="dt-side-nav__item">
+            <a href="javascript:void(0)" class="dt-side-nav__link dt-side-nav__arrow"
+              title="Facility Managment and Equipment">
+              <i class="icon icon-select icon-fw icon-xl"></i>
+              <span class="dt-side-nav__text">Facility & Equip. Managment</span> </a>
+
+            <ul class="dt-side-nav__sub-menu">
+
+              <li class="dt-side-nav__item">
+                <a href="javascript:void(0)" class="dt-side-nav__link dt-side-nav__arrow" title="Tools">
+                  <i class="icon icon-extra-components icon-fw icon-xl"></i>
+                  <span class="dt-side-nav__text"> Tool</span> </a>
+
+                <ul class="dt-side-nav__sub-menu">
+
+                  <li class="dt-side-nav__item">
+
+                    <a href="/create/tool" class="dt-side-nav__link" title="Add Tool's"> <i
+                        class="icon icon-add-circle icon-fw icon-xl"></i>
+                      <span class="dt-side-nav__text">Add New Tool's</span> </a>
+                  </li>
+                  <li class="dt-side-nav__item">
+                    <a href="/view/tool" class="dt-side-nav__link" title="View Tool's"> <i
+                        class="icon icon-all-contacts icon-fw icon-xl"></i>
+                      <span class="dt-side-nav__text">View All Tool's</span> </a>
+                  </li>
+
+                </ul>
+              </li>
+            </ul>
+          </li>
+        
+
+      <li class="dt-side-nav__item">
+        <a href="javascript:void(0)" class="dt-side-nav__link dt-side-nav__arrow" title="User Management">
+          <i class="icon icon-profile2 icon-fw icon-xl"></i>
+          <span class="dt-side-nav__text">User Management</span> </a>
+
+        <ul class="dt-side-nav__sub-menu">
+
+          <li class="dt-side-nav__item">
+            <a href="/admin/confirm/users" class="dt-side-nav__link" title="Confirm User"> <i
+                class="icon icon-check-square-o icon-fw icon-sm"></i>
+              <span class="dt-side-nav__text">Confirm User</span> </a>
+          </li>
+          <li class="dt-side-nav__item">
+            <a href="/admin/active/users" class="dt-side-nav__link" title="Active User"> <i
+                class="icon icon-user icon-fw icon-sm"></i>
+              <span class="dt-side-nav__text">Active User</span> </a>
+          </li>
+          <li class="dt-side-nav__item">
+            <a href="/admin/rejected/users" class="dt-side-nav__link" title="Rejected User"> <i
+                class="icon icon-user-o icon-fw icon-sm"></i>
+              <span class="dt-side-nav__text">Rejected User</span> </a>
+          </li>
+          <!-- <li class="dt-side-nav__item">
+            <a href="/admin/change/role" class="dt-side-nav__link" title="Change Role"> <i
+                class="icon  icon-circle-check icon-fw icon-sm"></i>
+              <span class="dt-side-nav__text">Change Role</span> </a>
+          </li> -->
+        </ul>
+      </li>
+
+      <li class="dt-side-nav__item">
+        <a href="javascript:void(0)" class="dt-side-nav__link dt-side-nav__arrow" title="Survey">
+          <i class="icon icon-ckeditor icon-fw icon-xl"></i>
+          <span class="dt-side-nav__text">Survey</span> </a>
+
+        <!-- Sub-menu -->
+        <ul class="dt-side-nav__sub-menu">
+
+          <li class="dt-side-nav__item">
+            <a href="/create/survey" class="dt-side-nav__link" title="New Survey's"> <i
+                class="icon icon-add-circle icon-fw icon-xl"></i>
+              <span class="dt-side-nav__text">New Survey's</span> </a>
+          </li>
+          <li class="dt-side-nav__item">
+            <a href="/view/survey" class="dt-side-nav__link" title="View Survey's"> <i
+                class="icon icon-all-contacts icon-fw icon-xl"></i>
+              <span class="dt-side-nav__text">View Survey's</span> </a>
+          </li>
+
+          <li class="dt-side-nav__item">
+            <a href="/sent/surveyinvitation" class="dt-side-nav__link" title="Survey Invitation Sent"> <i
+                class="icon icon-link icon-fw icon-xl"></i>
+              <span class="dt-side-nav__text">Survey Invitation </span> </a>
+          </li>
+
+          <li class="dt-side-nav__item">
+            <a href="/view/analysis" class="dt-side-nav__link" title="Analysis"> <i
+                class="icon icon-map-drawing icon-fw icon-xl"></i>
+              <span class="dt-side-nav__text">Analysis</span> </a>
+          </li>
+
+          <li class="dt-side-nav__item">
+            <a href="/view/previewanalysis" class="dt-side-nav__link" title="Preview Analysis"> <i
+                class="icon icon-view icon-fw icon-xl"></i>
+              <span class="dt-side-nav__text">Preview Analysis</span> </a>
+          </li>
+
+        </ul>
+      </li>
+
+
+      <li class="dt-side-nav__item">
+        <a href="javascript:void(0)" class="dt-side-nav__link dt-side-nav__arrow" title="Master Table">
+          <i class="icon icon-table icon-fw icon-xl"></i>
+          <span class="dt-side-nav__text">Master Table</span> </a>
+
+        <!-- Sub-menu -->
+        <ul class="dt-side-nav__sub-menu">
+          <li class="dt-side-nav__item">
+            <a href="/create/survey" class="dt-side-nav__link" title="Create New Table"> <i
+                class="icon icon-table-data icon-fw icon-xl"></i>
+              <span class="dt-side-nav__text">Create New Table</span> </a>
+          </li>
+          <li class="dt-side-nav__item">
+            <a href="/view/survey" class="dt-side-nav__link" title="Generate Reports"> <i
+                class="icon icon-extra-components icon-fw icon-xl"></i>
+              <span class="dt-side-nav__text">Generate Reports</span> </a>
+          </li>
+
+        </ul>
+      </li>
+
+
+      <li class="dt-side-nav__item">
+        <a href="javascript:void(0)" class="dt-side-nav__link dt-side-nav__arrow" title="Company Details">
+          <i class="icon icon-company icon-fw icon-xl"></i>
+          <span class="dt-side-nav__text">Company Details</span> </a>
+
+        <!-- Sub-menu -->
+        <ul class="dt-side-nav__sub-menu">
+          <!-- Menu Item -->
+          <li class="dt-side-nav__item">
+            <a href="/add/basic" class="dt-side-nav__link" title="Basic Setup"> <i
+                class="icon icon-profile2 icon-fw icon-xl"></i>
+              <span class="dt-side-nav__text">Basic Setup</span> </a>
+          </li>
+        </ul>
+
+        <!-- /menu header -->
+      <li class="dt-side-nav__item">
+        <a href="javascript:void(0)" class="dt-side-nav__link dt-side-nav__arrow" title="Client Information">
+          <i class="icon icon-wall icon-fw icon-xl"></i>
+          <span class="dt-side-nav__text">Account Information</span> </a>
+
+        <!-- Sub-menu -->
+        <ul class="dt-side-nav__sub-menu">
+          <!-- Menu Item -->
+          <li class="dt-side-nav__item">
+            <a href="/user/profile" class="dt-side-nav__link" title="Profile"> <i
+                class="icon icon-profile2 icon-fw icon-xl"></i>
+              <span class="dt-side-nav__text">Profile</span> </a>
+          </li>
+          <li class="dt-side-nav__item">
+            <a href="/user/information" class="dt-side-nav__link" title="Update Profile"> <i
+                class="icon icon-profile2 icon-fw icon-xl"></i>
+              <span class="dt-side-nav__text">Update Profile</span> </a>
+          </li>
+
+
+        </ul>
+        <!-- /sidebar navigation -->
+
+
+
+  </div>
+</aside>
+<div class="dt-content-wrapper">

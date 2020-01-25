@@ -1,0 +1,123 @@
+<% include sidebar.ejs %>
+
+<div class="dt-content">
+
+  <!-- Page Header -->
+  <!-- <div class="dt-page__header">
+      <h1 class="dt-page__title">Basic Form</h1>
+    </div> -->
+  <!-- /page header -->
+
+  <div class="dt-page__header">
+    <h1 class="dt-page__title">Issue Sources</h1>
+  </div>
+
+  <!-- Grid -->
+  <div class="row">
+    <!-- Grid Item -->
+    <div class="col-12">
+
+      <!-- Card -->
+      <div class="dt-card">
+
+        <!-- Card Header -->
+        <div class="dt-card__header">
+
+          <!-- Card Heading -->
+          <div class="dt-card__heading">
+            <h3 class="dt-card__title">Add Issue Sources</h3>
+          </div>
+          <!-- /card heading -->
+
+        </div>
+        <!-- /card header -->
+
+        <!-- Card Body -->
+        <div class="dt-card__body">
+
+          <!-- Form -->
+          <form>
+
+            <div class="form-group col-xl-12">
+              <label for="type" class="sr-only">Issue Sources</label>
+              <input type="text" class="form-control" id="type" name="issue_sources"
+                placeholder="Enter new sources">
+            </div>
+
+            <div class="form-group">
+
+              <button type="submit" class="btn btn-primary">Add</button>
+            </div>
+
+          </form>
+
+          <!-- /form -->
+
+        </div>
+        <!-- /card body -->
+
+      </div>
+      <!-- /card -->
+
+    </div>
+    <!-- /grid item -->
+
+  </div>
+  <!-- /grid -->
+
+  <div class="row">
+    <!-- Grid Item -->
+    <div class="col-12">
+
+      <!-- Card -->
+      <div class="dt-card">
+
+        <!-- Card Header -->
+
+        <!-- /entry header -->
+
+        <!-- Card -->
+        <div class="card overflow-hidden">
+
+          <!-- Card Header -->
+          <div class="card-header bg-transparent">
+            <h3 class="dt-card__title">All Issue Sources</h3>
+
+          </div>
+          <!-- /card header -->
+
+          <!-- Card Body -->
+          <div class="card-body pt-0">
+
+            <!-- Tables -->
+            <div class="table-responsive">
+              <table class="table mb-0">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th class="text-uppercase" scope="col">Sources</th>
+                    <th class="text-uppercase" scope="col">Actions</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- /tables -->
+
+          </div>
+          <!-- /card body -->
+
+        </div>
+        <!-- /card -->
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /site content -->
+
+
+<% include footer.ejs %>

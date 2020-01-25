@@ -1,0 +1,157 @@
+<% include sidebar.ejs %>
+
+<div class="dt-content">
+
+    <!-- Page Header -->
+    <!-- <div class="dt-page__header">
+        <h1 class="dt-page__title">Basic Form</h1>
+      </div> -->
+    <!-- /page header -->
+  
+  
+  
+    <!-- Grid -->
+    <div class="row">
+      <!-- Grid Item -->
+      <div class="col-12">
+  
+        <!-- Card -->
+        <div class="dt-card">
+  
+          <!-- Card Header -->
+          <div class="dt-card__header">
+  
+            <!-- Card Heading -->
+            <div class="dt-card__heading">
+              <h3 class="dt-card__title">New Task's</h3>
+            </div>
+
+            <a type="button" href="/add/task/type" role="button" class="btn btn-dark mr-2 mb-2"> Add Task Type</a>
+                <a type="button" href="/add/task/source" role="button" class="btn btn-dark mr-2 mb-2"> Add Task Source</a>
+            <!-- /card heading -->
+  
+          </div>
+          <!-- /card header -->
+  
+          <!-- Card Body -->
+          <div class="dt-card__body">
+  
+            <!-- Form -->
+            <form>
+  
+  
+              <!-- Form Row -->
+              <div class="form-row input-group">
+                <label class="col-md-2 col-sm-3 col-form-label text-sm-right" for="simple-select">Task Type</label>
+                <div class="col-md-10 col-sm-9">
+                  <select class="custom-select" id="inputGroupSelect04">
+                    <option selected>Choose Task Type</option>
+                    <option value="1">Supplier Issue</option>
+                    <option value="2">Non Conformity</option>
+                    <option value="3">Customer Compaint</option>
+                  </select>
+                </div>
+              </div>
+  
+              <!-- /form row -->
+              <br />
+              <!-- Form Row -->
+              <div class="form-row input-group">
+                <label class="col-md-2 col-sm-3 col-form-label text-sm-right" for="simple-select">Task Source</label>
+                <div class="col-md-10 col-sm-9">
+                  <select class="custom-select" id="inputGroupSelect04">
+                    <option selected>Choose Source</option>
+                    <option value="1">Internal Audit</option>
+                    <option value="2">External Audit</option>
+                    <option value="3">Observation</option>
+                  </select>
+                </div>
+              </div>
+              <!-- /form row -->
+              <br />
+
+              <div class="form-row input-group">
+                  <label class="col-md-2 col-sm-3 col-form-label text-sm-right" for="simple-select">Company Name</label>
+                  <div class="col-md-10 col-sm-9">
+                    <select class="custom-select" id="inputGroupSelect04">
+                      <option selected>Choose Company Name</option>
+                      <option value="1">ABC LTD.</option>
+                      <option value="2">BCD LTD.</option>
+                      <option value="3">DEF LTD.</option>
+                    </select>
+                  </div>
+                </div>
+                <!-- /form row -->
+                <br />
+
+              <div class="form-row input-group">
+                <label class="col-md-2 col-sm-3 col-form-label text-sm-right" for="simple-select">Assigned User</label>
+                <div class="col-md-10 col-sm-9">
+                  <select class="custom-select" id="inputGroupSelect04">
+                    <option selected>Choose User</option>
+                    <option value="1">Jim Peterson</option>
+                    <option value="2">Kevin Dagger</option>
+                    <option value="3">Chris Jackson</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- /form row -->
+              <br />
+
+              <div class="form-row input-group">
+                <label class="col-md-2 col-sm-3 col-form-label text-sm-right"
+                    for="normal-input-1">Due Date</label>
+                <div class="col-md-10 col-sm-9">
+                    <div class="input-group date" id="date-time-picker-1" data-target-input="nearest">
+                        <input type="text" class="form-control datetimepicker-input"
+                            data-target="#date-time-picker-1" />
+                        <div class="input-group-append" data-target="#date-time-picker-1"
+                            data-toggle="datetimepicker">
+                            <div class="input-group-text"><i class="icon icon-calendar"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br />
+
+            <div class="form-row input-group">
+                <label class="col-md-2 col-sm-3 col-form-label text-sm-right"
+                    for="normal-input-1">Reminder</label>
+
+                <div class="col-md-10 col-sm-9">
+                    <div class="input-group date" id="date-time-picker-1" data-target-input="nearest">
+                        <input type="text" class="form-control datetimepicker-input"
+                            data-target="#date-time-picker-1" />
+                        <div class="input-group-append" data-target="#date-time-picker-1"
+                            data-toggle="datetimepicker">
+                            <div class="input-group-text"><i class="icon icon-calendar"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br />
+
+            <div class="form-row input-group">
+                <label class="col-md-2 col-sm-3 col-form-label text-sm-right" for="text-area-1">Tasks Discription</label>
+  
+                <div class=" col-md-10 col-sm-9 ">
+                  <label></label>
+              <div class=" col-md-10 col-sm-9 " id="summernote">
+                  
+        
+                </div>
+                </div>
+              </div>
+              <!-- /form row -->
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+        
+
+
+<% include footer.ejs %>

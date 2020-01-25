@@ -1,0 +1,26 @@
+
+<% include head.ejs %>
+
+<!-- Banner
+================================================== -->
+<body class="auth-wrapper">
+  <div class="all-wrapper menu-side with-pattern">
+    <div class="auth-box-w">
+      <!-- <div class="logo-w"><a href="/"><img src="img/Sorich_Organics_400x.png"  alt="" style="width: 150px;"/></a></div> -->
+      <div class="logo-w"><a href="#"><img alt="" style="width: 250px;"src="/img/Sorich_Organics_400x.png"></a></div>
+      <h4 class="auth-header">Enter Your Username To Re-set The Password</h4>
+							<form class="register" action="/password/forgot" method="post">
+                <div class="form-group"><label for=""> Username</label><input class="form-control" name="username" placeholder="Enter email" type="text">
+                  <div class="pre-icon os-icon os-icon-email-2-at2"></div>
+                </div>
+
+                <div class="form-row">
+									<input type="submit" class="button border fw margin-top-10"  value="Submit"/>
+								</div>
+
+
+							</form>
+
+
+          </div>
+        </div>
