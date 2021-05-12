@@ -31,7 +31,7 @@
     "bcrypt-nodejs": "latest",
     "body-parser": "^1.18.3",
     "bootstrap": "*",
-    "chart.js": "^2.7.2",
+    "chart.js": "^2.9.4",
     "chartist": "^0.11.0",
     "ckeditor": "^*",
     "codemirror": "^5.39.2",
