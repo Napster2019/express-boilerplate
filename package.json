@@ -48,7 +48,7 @@
     "express-session": "^1.15.6",
     "express-uploader": "^0.1.4",
     "flag-icon-css": "^3.0.0",
-    "formiojs": "^4.4.0",
+    "formiojs": "^4.14.11",
     "gmaps": "^0.4.24",
     "jquery": "^3.3.1",
     "jsdom": "^13.2.0",
