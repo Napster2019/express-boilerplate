@@ -52,7 +52,7 @@
     "gmaps": "^0.4.24",
     "jquery": "^3.3.1",
     "jsdom": "^13.2.0",
-    "latest-version": "^4.0.0",
+    "latest-version": "^7.0.0",
     "masonry-layout": "^4.2.1",
     "method-override": "~2.3.6",
     "mkdirp": "^0.5.1",
